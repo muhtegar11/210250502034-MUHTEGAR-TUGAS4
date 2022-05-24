@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-25 12.02.39 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1PNEg2NVYwODsyMDIyLTA1LTI0OzExLjIxLjExIFBNOzI3MjA="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1PNEg2NVYwODsyMDIyLTA1LTI1OzEyLjAyLjM5IEFNOzQ7MjgyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Umur" type="Integer" array="False" size=""/>
+            <input variable="Umur"/>
+            <if expression="Umur &lt;10">
+                <then>
+                    <output expression="&quot;Anak-Anak&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Umur &lt;18">
+                        <then>
+                            <output expression="&quot;Remaja&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Umur &lt;35">
+                                <then>
+                                    <output expression="&quot;Dewasa&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Parubaya&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
